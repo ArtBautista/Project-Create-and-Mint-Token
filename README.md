@@ -4,11 +4,13 @@ This Solidity program is a simple "Create and Mint Token" program that demonstra
 
 ## Description
 
-This code defines an ERC20 token contract named Token. The contract has two main functions:
+This code defines an ERC20 token contract named Token. The contract has three main functions:
   
-  2.mintTokens(address account, uint256 amount): This function mints new tokens to the specified account. Only the contract owner can call this function.
+  1.mintTokens(address account, uint256 amount): This function mints new tokens to the specified account. Only the contract owner can call this function.
   
-  3.burnTokens(address account, uint256 amount): This function burns tokens from the specified account.
+  2.burnTokens(address account, uint256 amount): This function burns tokens from the specified account.
+
+  3.transferTokens(address _from, uint256 _value): This function transfers tokens from the specified account.
 
 The contract also has an Owner address variable that stores the address of the contract deployer. This address is used to control who can mint and burn tokens.
 
