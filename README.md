@@ -10,7 +10,7 @@ This code defines an ERC20 token contract named Token. The contract has three ma
   
   2.burnTokens(address account, uint256 amount): This function burns tokens from the specified account.
 
-  3.transferTokens(address _from, uint256 _value): This function transfers tokens from the specified account.
+  3.transferTokens(address _from, uint256 _value): This function transfers tokens to a specified account.
 
 The contract also has an Owner address variable that stores the address of the contract deployer. This address is used to control who can mint and burn tokens.
 
