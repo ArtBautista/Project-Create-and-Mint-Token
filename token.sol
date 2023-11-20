@@ -19,6 +19,13 @@ contract Token is ERC20 {
     function burnTokens(address account, uint256 amount) public {
         _burn(account, amount);
     }
+    
+    function transferTokens(address _from, uint256 _value) external {
+        require(balanceOf(msg.sender) >= _value, "You do not have enough Degen Tokens");
+        approve(msg.sender, _value);
+        transferFrom(msg.sender, _from, _value);
+    }
+
 }
 
 
